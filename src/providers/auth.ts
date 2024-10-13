@@ -41,6 +41,7 @@ export const authProvider: AuthBindings = {
       };
     } catch (e) {
       const error = e as Error;
+      console.error("Login error:", error);
 
       return {
         success: false,
